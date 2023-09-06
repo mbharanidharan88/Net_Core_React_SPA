@@ -288,6 +288,7 @@ FakesAssemblies/
 .ntvs_analysis.dat
 node_modules/
 dist/
+ClientApp/config/keys/cert.key
 
 # Visual Studio 6 build log
 *.plg

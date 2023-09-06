@@ -13,9 +13,9 @@ const devConfig = {
       index: "index.html",
       },
       https: {
-          key: fs.readFileSync(path.resolve(__dirname, "cert.key")),
-          cert: fs.readFileSync(path.resolve(__dirname, "cert.crt")),
-          ca: fs.readFileSync(path.resolve(__dirname, "ca.crt")),
+          key: fs.readFileSync(path.resolve(__dirname, "keys/cert.key")),
+          cert: fs.readFileSync(path.resolve(__dirname, "keys/cert.crt")),
+          ca: fs.readFileSync(path.resolve(__dirname, "keys/ca.crt")),
       }
   },
   plugins: [

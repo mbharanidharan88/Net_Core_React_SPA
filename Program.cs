@@ -23,6 +23,7 @@ app.UseAuthorization();
 app.UseSpa(x =>
 {
     x.UseProxyToSpaDevelopmentServer("https://localhost:8080/");
+    // x.UseWebpackDevelopmentServer();
 });
 
 app.MapControllers();

@@ -19,7 +19,7 @@
 
 	<Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
 
-		<Exec WorkingDirectory="$(SpaRoot)" Command="echo 'Publishing React App'"  />
+		<Exec WorkingDirectory="$(SpaRoot)" Command="echo 'Publishing React App'" />
 		<Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
 		<Exec WorkingDirectory="$(SpaRoot)" Command="npm run build" />
 
