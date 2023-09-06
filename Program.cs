@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -20,11 +22,10 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAuthorization();
 
-app.UseSpa(x =>
-{
-    x.UseProxyToSpaDevelopmentServer("https://localhost:8080/");
-    // x.UseWebpackDevelopmentServer();
-});
+//app.UseSpa(x =>
+//{
+//    //x.UseProxyToSpaDevelopmentServer("https://localhost:8080/");
+//});
 
 app.MapControllers();
 
